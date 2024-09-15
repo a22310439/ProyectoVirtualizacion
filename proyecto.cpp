@@ -27,5 +27,10 @@ int main() {
 		"8 'Cambiar de propietario y/o grupo a un archivo o directorio en especifico'"
 		"9 'Actualizar los paquetes instalados y el sistema operativo'"
 		"10 'Salir de la aplicacion' 3>&1 1>&2 2>&3";
+
+		int opcion = system(command.c_str());
+
+		std::cout << "Opcion: " << opcion << std::endl;
+		
 	return 0;
 }
